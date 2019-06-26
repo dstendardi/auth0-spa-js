@@ -14,7 +14,7 @@ export default async function createAuth0Client(options: Auth0ClientOptions) {
     await auth0.getTokenSilently({
       audience: options.audience,
       scope: options.scope,
-      ignoreCache: true
+      ignoreCache: options.ignoreCache
     });
   } catch (error) {
     // ignore
