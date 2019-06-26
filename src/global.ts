@@ -78,6 +78,11 @@ interface Auth0ClientOptions extends BaseLoginOptions {
    * Typically, this value is no more than a minute or two at maximum.
    */
   leeway?: number;
+  
+  /**
+   * Disable storage of token in cookies
+   */
+  ignoreCache?: boolean;
 }
 
 /**
